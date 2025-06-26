@@ -38,6 +38,9 @@ class BinaryTree
         // step2: assign value to the data filed of new node 
         newNode->leftchild = nullptr;
 
+        // step3: make the left and right child of the new node point
+        newNode->leftchild = nullptr;
+        newNode->rightchild = nullptr;
+
         
-     }
 }
