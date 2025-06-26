@@ -45,4 +45,14 @@ class BinaryTree
         // step4: locate the node wich will be the parent of the node 
         node *parent = nullptr;
         node *currendNode = nullptr;
+        search(x, parent, currentNode);
+
+        // step5: if parent is null (tree is empety)
+        if (parrent == nullptr)
+        {
+            //5a: mark the new node as root 
+            ROOT = newNode;
+
+            
+        }
 }
