@@ -89,7 +89,8 @@ class BinaryTree
             parrent =currentNode;
             if (element < currentNode->leftchild->info)
                 currentNode = currentNode->leftchild;
-            else curentNode = currentNOde->rightchild;
+            else currentNode = currentNode->rightchild;
         }
+        
     }
 }
