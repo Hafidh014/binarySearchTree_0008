@@ -91,6 +91,36 @@ class BinaryTree
                 currentNode = currentNode->leftchild;
             else currentNode = currentNode->rightchild;
         }
-        
+void insert() {
+        int x;
+        cout << "Masukkan nilai: ";
+        cin >> x;
+
+        node *parent, *currentNode;
+        search(x, parent, currentNode);
+
+        // Cegah duplikat
+        if (currentNode != nullptr) {
+            cout << "Nilai sudah ada di dalam tree.\n";
+            return;
+        }
+
+        // Step 1 & 2: Buat dan isi nilai ke newNode
+        node *newNode = new node();
+        newNode->info = x;
+
+        if (parent == nullptr) {
+            ROOT = newNode;
+            return;
+        }
+
+        if (x < parent->info)
+            parent->leftchild = newNode;
+        else
+            parent->rightchild = newNode;
     }
-}
+
+
+
+    }
+};
