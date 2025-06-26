@@ -57,5 +57,19 @@ class BinaryTree
             return;
         }
 
-        //step6: 
+        //step6: if te vallue in the data filled of 
+        // new node is less then of parrent
+        if (x < parrent->info)
+        {
+            //6a make the left and right child of the new node point
+            parent->leftchild = noeNode;
+            return;
+
+            //6b: exit 
+        }
+
+        //step 7: if the value in the data filed of the 
+        //new node is greather than that of the parrent 
+        else if (x >)
+    }
 }
