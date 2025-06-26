@@ -61,8 +61,8 @@ class BinaryTree
         // new node is less then of parrent
         if (x < parrent->info)
         {
-            //6a make the left and right child of the new node point
-            parent->leftchild = noeNode;
+            //6a: make the left and right child of the new node point
+            parent->leftchild = newNode;
             return;
 
             //6b: exit 
@@ -70,6 +70,26 @@ class BinaryTree
 
         //step 7: if the value in the data filed of the 
         //new node is greather than that of the parrent 
-        else if (x >)
+        else if (x > parrent->info)
+        {
+            //7a :make the left and right child of the new node point
+            parent->rightchild  = newNode;
+            //7b: exit 
+            return;
+        }
+    }
+
+    void search(int element, node *&parent, node *currentNode)
+    {
+        //this fonction searcher the currentnode of the specifield node ad
+        currentNode = ROOT;
+        parent = nullptr;
+        while ((currentNode !=nullptr) &&(currentNode->info != element ))
+        {
+            parrent =currentNode;
+            if (element < currentNode->leftchild->info)
+                currentNode = currentNode->leftchild;
+            else curentNode = currentNOde->rightchild;
+        }
     }
 }
